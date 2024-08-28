@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/posts")
+@RequestMapping("/api/posts")
 class PostController(private val postService: PostService) {
 
     @PostMapping

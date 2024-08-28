@@ -2,6 +2,7 @@ package com.choi.postservice.service
 
 import com.choi.postservice.dto.Post
 import com.choi.postservice.dto.PostStatus
+import com.choi.postservice.exception.PostNotFoundException
 import com.choi.postservice.repository.PostRepository
 import org.springframework.stereotype.Service
 

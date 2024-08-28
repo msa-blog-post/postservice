@@ -1,5 +1,5 @@
 # 1. 기본 이미지
-FROM openjdk:17-jdk-slim as build
+FROM openjdk:17-jdk-slim AS build
 
 # 2. 작업 디렉토리를 설정
 WORKDIR /app
@@ -7,8 +7,8 @@ WORKDIR /app
 # 3. Gradle Wrapper 파일과 소스 코드 복사
 COPY gradlew /app/gradlew
 COPY gradle /app/gradle
-COPY build.gradle.kts .
-COPY settings.gradle.kts .
+COPY build.gradle .
+COPY settings.gradle .
 COPY src /app/src
 
 # 4. Gradle Wrapper에 실행 권한 부여
